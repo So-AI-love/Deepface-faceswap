@@ -1,2 +1,19 @@
-09/12/2020 22:25:14 MainProcess     MainThread      logger          log_setup                 INFO     Log level set to: INFO
-09/12/2020 22:25:14 MainProcess     MainThread      launcher        execute_script            ERROR    There was an error importing Tensorflow. This is most likely because you do not have TensorFlow installed, or you are trying to run tensorflow-gpu on a system without an Nvidia graphics card. Original import error: No module named 'tensorflow'
+09/12/2020 22:26:43 MainProcess     MainThread      logger          log_setup                 INFO     Log level set to: INFO
+09/12/2020 22:26:46 MainProcess     MainThread      launcher        execute_script            ERROR    Got Exception on main handler:
+Traceback (most recent call last):
+  File "/content/Deepface-faceswap/lib/cli/launcher.py", line 153, in execute_script
+    script = self._import_script()
+  File "/content/Deepface-faceswap/lib/cli/launcher.py", line 43, in _import_script
+    module = import_module(mod)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/content/Deepface-faceswap/scripts/train.py", line 13, in <module>
+    from keras.backend.tensorflow_backend import set_session
+ModuleNotFoundError: No module named 'keras'
+09/12/2020 22:26:46 MainProcess     MainThread      launcher        execute_script            CRITICAL An unexpected crash has occurred. Crash report written to '/content/Deepface-faceswap/crash_report.2020.09.12.222645831416.log'. You MUST provide this file if seeking assistance. Please verify you are running the latest version of faceswap before reporting
