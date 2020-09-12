@@ -1,4 +1,8 @@
 # deepfakes_faceswap
+**you can test it by google clob via this link:**
+
+https://colab.research.google.com/drive/1F3Ng7ZFeyz_Kn_sbvRnZSGNrn4aB45Gr?usp=sharing
+
 <p align="center">
   <a href="https://faceswap.dev"><img src="https://i.imgur.com/zHvjHnb.png"></img></a>
 <br />FaceSwap is a tool that utilizes deep learning to recognize and swap faces in pictures and videos.
