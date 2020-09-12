@@ -1,37 +1,64 @@
-09/12/2020 21:10:21 MainProcess     MainThread      logger          log_setup                 INFO     Log level set to: INFO
-09/12/2020 21:10:23 MainProcess     MainThread      extract         __init__                  INFO     Output Directory: /content/Deepface-faceswap/extract_video2
-09/12/2020 21:10:24 MainProcess     MainThread      gpu_stats       _log                      WARNING  There was an error reading from the Nvidia Machine Learning Library. Either you do not have an Nvidia GPU (in which case this warning can be ignored) or the most likely cause is incorrectly installed drivers. If this is the case, Please remove and reinstall your Nvidia drivers before reporting.Original Error: Driver Not Loaded
-09/12/2020 21:10:24 MainProcess     MainThread      gpu_stats       _log                      WARNING  No GPU detected. Switching to CPU mode
-09/12/2020 21:10:24 MainProcess     MainThread      plugin_loader   _import                   INFO     Loading Detect from S3Fd plugin...
-09/12/2020 21:10:24 MainProcess     MainThread      plugin_loader   _import                   INFO     Loading Align from Fan plugin...
-09/12/2020 21:10:24 MainProcess     MainThread      plugin_loader   _import                   INFO     Loading Mask from Components plugin...
-09/12/2020 21:10:24 MainProcess     MainThread      plugin_loader   _import                   INFO     Loading Mask from Extended plugin...
-09/12/2020 21:10:24 MainProcess     MainThread      pipeline        _set_plugin_batchsize     INFO     Reset batch sizes due to available VRAM: Detect: 1
-09/12/2020 21:10:24 MainProcess     MainThread      extract         process                   INFO     Starting, this may take a while...
-09/12/2020 21:10:24 MainProcess     MainThread      _base           initialize                INFO     Initializing S3FD (Detect)...
-09/12/2020 21:10:24 MainProcess     MainThread      module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /content/Deepface-faceswap/lib/model/session.py:112: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.\n
-09/12/2020 21:10:24 MainProcess     MainThread      module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /content/Deepface-faceswap/lib/model/session.py:116: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.\n
-09/12/2020 21:10:24 MainProcess     MainThread      module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.\n
-09/12/2020 21:10:24 MainProcess     MainThread      module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:245: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.\n
-09/12/2020 21:10:24 MainProcess     MainThread      module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.\n
-09/12/2020 21:10:24 MainProcess     MainThread      module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:190: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.\n
-09/12/2020 21:10:24 MainProcess     MainThread      module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:199: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.\n
-09/12/2020 21:10:24 MainProcess     MainThread      module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:206: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.\n
-09/12/2020 21:10:24 MainProcess     MainThread      module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:3976: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.\n
-09/12/2020 21:10:25 MainProcess     MainThread      module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:3295: The name tf.log is deprecated. Please use tf.math.log instead.\n
-09/12/2020 21:10:26 MainProcess     MainThread      _base           initialize                INFO     Initialized S3FD (Detect) with batchsize of 1
-09/12/2020 21:38:03 MainProcess     MainThread      _base           initialize                INFO     Initializing FAN (Align)...
-09/12/2020 21:38:03 MainProcess     MainThread      module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.\n
-09/12/2020 21:38:04 MainProcess     MainThread      module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:3980: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.\n
-09/12/2020 21:38:05 MainProcess     MainThread      module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:2018: The name tf.image.resize_nearest_neighbor is deprecated. Please use tf.compat.v1.image.resize_nearest_neighbor instead.\n
-09/12/2020 21:38:44 MainProcess     MainThread      _base           initialize                INFO     Initialized FAN (Align) with batchsize of 12
-09/12/2020 21:45:55 MainProcess     MainThread      _base           initialize                INFO     Initializing Components (Mask)...
-09/12/2020 21:45:55 MainProcess     MainThread      _base           initialize                INFO     Initialized Components (Mask) with batchsize of 1
-09/12/2020 21:45:55 MainProcess     MainThread      _base           initialize                INFO     Initializing Extended (Mask)...
-09/12/2020 21:45:55 MainProcess     MainThread      _base           initialize                INFO     Initialized Extended (Mask) with batchsize of 1
-09/12/2020 21:46:06 MainProcess     MainThread      alignments      save                      INFO     Writing alignments to: '/content/Deepface-faceswap/workplace/Lionel Messi interview on Cristiano Ronaldo_cut_10_alignments.fsa'
-09/12/2020 21:46:06 MainProcess     MainThread      fsmedia         finalize                  INFO     -------------------------
-09/12/2020 21:46:06 MainProcess     MainThread      fsmedia         finalize                  INFO     Images found:        276
-09/12/2020 21:46:06 MainProcess     MainThread      fsmedia         finalize                  INFO     Faces detected:      251
-09/12/2020 21:46:06 MainProcess     MainThread      fsmedia         finalize                  INFO     -------------------------
-09/12/2020 21:46:06 MainProcess     MainThread      fsmedia         finalize                  INFO     Process Succesfully Completed. Shutting Down...
+09/12/2020 21:48:20 MainProcess     MainThread      logger          log_setup                 INFO     Log level set to: INFO
+09/12/2020 21:48:23 MainProcess     MainThread      train           _get_images               INFO     Model A Directory: /content/Deepface-faceswap/extract_video
+09/12/2020 21:48:23 MainProcess     MainThread      train           _get_images               INFO     Model B Directory: /content/Deepface-faceswap/extract_video2
+09/12/2020 21:48:23 MainProcess     MainThread      train           process                   INFO     Training data directory: /content/Deepface-faceswap/Model_data_new_videos
+09/12/2020 21:48:23 MainProcess     MainThread      train           _monitor                  INFO     ===================================================
+09/12/2020 21:48:23 MainProcess     MainThread      train           _monitor                  INFO       Starting
+09/12/2020 21:48:23 MainProcess     MainThread      train           _monitor                  INFO       Press 'ENTER' to save and quit
+09/12/2020 21:48:23 MainProcess     MainThread      train           _monitor                  INFO       Press 'S' to save model weights immediately
+09/12/2020 21:48:23 MainProcess     MainThread      train           _monitor                  INFO     ===================================================
+09/12/2020 21:48:24 MainProcess     _training_0     train           _training                 INFO     Loading data, this may take a while...
+09/12/2020 21:48:24 MainProcess     _training_0     plugin_loader   _import                   INFO     Loading Model from Original plugin...
+09/12/2020 21:48:24 MainProcess     _training_0     _base           load                      INFO     No existing state file found. Generating.
+09/12/2020 21:48:24 MainProcess     _training_0     module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:74: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.\n
+09/12/2020 21:48:24 MainProcess     _training_0     module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.\n
+09/12/2020 21:48:24 MainProcess     _training_0     module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:4138: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.\n
+09/12/2020 21:48:24 MainProcess     _training_0     module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.\n
+09/12/2020 21:48:24 MainProcess     _training_0     module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:181: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.\n
+09/12/2020 21:48:24 MainProcess     _training_0     module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:186: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.\n
+09/12/2020 21:48:24 MainProcess     _training_0     module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:190: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.\n
+09/12/2020 21:48:24 MainProcess     _training_0     module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:199: The name tf.is_variable_initialized is deprecated. Please use tf.compat.v1.is_variable_initialized instead.\n
+09/12/2020 21:48:24 MainProcess     _training_0     module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:206: The name tf.variables_initializer is deprecated. Please use tf.compat.v1.variables_initializer instead.\n
+09/12/2020 21:48:25 MainProcess     _training_0     _base           load_models               INFO     Creating new 'original' model in folder: '/content/Deepface-faceswap/Model_data_new_videos'
+09/12/2020 21:48:25 MainProcess     _training_0     plugin_loader   _import                   INFO     Loading Trainer from Original plugin...
+09/12/2020 21:48:26 MainProcess     _training_0     _base           _set_tensorboard          INFO     Enabled TensorBoard Logging
+09/12/2020 21:48:29 MainProcess     _training_0     deprecation     new_func                  DEBUG    From /tensorflow-1.15.2/python3.6/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.\nInstructions for updating:\nIf using Keras pass *_constraint arguments to layers.
+09/12/2020 21:48:29 MainProcess     _training_0     module_wrapper  _tfmw_add_deprecation_warning DEBUG    From /usr/local/lib/python3.6/dist-packages/keras/backend/tensorflow_backend.py:986: The name tf.assign_add is deprecated. Please use tf.compat.v1.assign_add instead.\n
+09/12/2020 21:48:30 MainProcess     MainThread      train           _end_thread               CRITICAL Error caught! Exiting...
+09/12/2020 21:48:30 MainProcess     MainThread      multithreading  join                      ERROR    Caught exception in thread: '_training_0'
+09/12/2020 21:48:31 MainProcess     MainThread      launcher        execute_script            ERROR    Got Exception on main handler:
+Traceback (most recent call last):
+  File "/content/Deepface-faceswap/lib/cli/launcher.py", line 155, in execute_script
+    process.process()
+  File "/content/Deepface-faceswap/scripts/train.py", line 161, in process
+    self._end_thread(thread, err)
+  File "/content/Deepface-faceswap/scripts/train.py", line 201, in _end_thread
+    thread.join()
+  File "/content/Deepface-faceswap/lib/multithreading.py", line 121, in join
+    raise thread.err[1].with_traceback(thread.err[2])
+  File "/content/Deepface-faceswap/lib/multithreading.py", line 37, in run
+    self._target(*self._args, **self._kwargs)
+  File "/content/Deepface-faceswap/scripts/train.py", line 226, in _training
+    raise err
+  File "/content/Deepface-faceswap/scripts/train.py", line 216, in _training
+    self._run_training_cycle(model, trainer)
+  File "/content/Deepface-faceswap/scripts/train.py", line 305, in _run_training_cycle
+    trainer.train_one_step(viewer, timelapse)
+  File "/content/Deepface-faceswap/plugins/train/trainer/_base.py", line 316, in train_one_step
+    raise err
+  File "/content/Deepface-faceswap/plugins/train/trainer/_base.py", line 283, in train_one_step
+    loss[side] = batcher.train_one_batch()
+  File "/content/Deepface-faceswap/plugins/train/trainer/_base.py", line 424, in train_one_batch
+    loss = self._model.predictors[self._side].train_on_batch(model_inputs, model_targets)
+  File "/usr/local/lib/python3.6/dist-packages/keras/engine/training.py", line 1216, in train_on_batch
+    self._make_train_function()
+  File "/usr/local/lib/python3.6/dist-packages/keras/engine/training.py", line 509, in _make_train_function
+    loss=self.total_loss)
+  File "/content/Deepface-faceswap/lib/model/optimizers.py", line 99, in get_updates
+    if self.initial_decay > 0:
+  File "/tensorflow-1.15.2/python3.6/tensorflow_core/python/keras/optimizer_v2/optimizer_v2.py", line 549, in __getattribute__
+    raise e
+  File "/tensorflow-1.15.2/python3.6/tensorflow_core/python/keras/optimizer_v2/optimizer_v2.py", line 539, in __getattribute__
+    return super(OptimizerV2, self).__getattribute__(name)
+AttributeError: 'Adam' object has no attribute 'initial_decay'
+09/12/2020 21:48:31 MainProcess     MainThread      launcher        execute_script            CRITICAL An unexpected crash has occurred. Crash report written to '/content/Deepface-faceswap/crash_report.2020.09.12.214830147502.log'. You MUST provide this file if seeking assistance. Please verify you are running the latest version of faceswap before reporting
