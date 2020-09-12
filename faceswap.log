@@ -1,18 +1,18 @@
-09/12/2020 22:15:39 MainProcess     MainThread      logger          log_setup                 INFO     Log level set to: INFO
-09/12/2020 22:15:42 MainProcess     MainThread      utils           _init_num_threads         INFO     NumExpr defaulting to 2 threads.
-09/12/2020 22:15:43 MainProcess     MainThread      train           _get_images               INFO     Model A Directory: /content/Deepface-faceswap/extract_video
-09/12/2020 22:15:43 MainProcess     MainThread      train           _get_images               INFO     Model B Directory: /content/Deepface-faceswap/extract_video2
-09/12/2020 22:15:43 MainProcess     MainThread      train           process                   INFO     Training data directory: /content/Deepface-faceswap/Model_data_new_videos
-09/12/2020 22:15:43 MainProcess     MainThread      train           _monitor                  INFO     ===================================================
-09/12/2020 22:15:43 MainProcess     MainThread      train           _monitor                  INFO       Starting
-09/12/2020 22:15:43 MainProcess     MainThread      train           _monitor                  INFO       Press 'ENTER' to save and quit
-09/12/2020 22:15:43 MainProcess     MainThread      train           _monitor                  INFO       Press 'S' to save model weights immediately
-09/12/2020 22:15:43 MainProcess     MainThread      train           _monitor                  INFO     ===================================================
-09/12/2020 22:15:44 MainProcess     _training_0     train           _training                 INFO     Loading data, this may take a while...
-09/12/2020 22:15:44 MainProcess     _training_0     plugin_loader   _import                   INFO     Loading Model from Original plugin...
-09/12/2020 22:15:45 MainProcess     MainThread      train           _end_thread               CRITICAL Error caught! Exiting...
-09/12/2020 22:15:45 MainProcess     MainThread      multithreading  join                      ERROR    Caught exception in thread: '_training_0'
-09/12/2020 22:15:46 MainProcess     MainThread      launcher        execute_script            ERROR    Got Exception on main handler:
+09/12/2020 22:20:35 MainProcess     MainThread      logger          log_setup                 INFO     Log level set to: INFO
+09/12/2020 22:20:39 MainProcess     MainThread      utils           _init_num_threads         INFO     NumExpr defaulting to 2 threads.
+09/12/2020 22:20:39 MainProcess     MainThread      train           _get_images               INFO     Model A Directory: /content/Deepface-faceswap/extract_video
+09/12/2020 22:20:39 MainProcess     MainThread      train           _get_images               INFO     Model B Directory: /content/Deepface-faceswap/extract_video2
+09/12/2020 22:20:39 MainProcess     MainThread      train           process                   INFO     Training data directory: /content/Deepface-faceswap/Model_data_new_videos
+09/12/2020 22:20:39 MainProcess     MainThread      train           _monitor                  INFO     ===================================================
+09/12/2020 22:20:39 MainProcess     MainThread      train           _monitor                  INFO       Starting
+09/12/2020 22:20:39 MainProcess     MainThread      train           _monitor                  INFO       Press 'ENTER' to save and quit
+09/12/2020 22:20:39 MainProcess     MainThread      train           _monitor                  INFO       Press 'S' to save model weights immediately
+09/12/2020 22:20:39 MainProcess     MainThread      train           _monitor                  INFO     ===================================================
+09/12/2020 22:20:40 MainProcess     _training_0     train           _training                 INFO     Loading data, this may take a while...
+09/12/2020 22:20:40 MainProcess     _training_0     plugin_loader   _import                   INFO     Loading Model from Original plugin...
+09/12/2020 22:20:41 MainProcess     MainThread      train           _end_thread               CRITICAL Error caught! Exiting...
+09/12/2020 22:20:41 MainProcess     MainThread      multithreading  join                      ERROR    Caught exception in thread: '_training_0'
+09/12/2020 22:20:42 MainProcess     MainThread      launcher        execute_script            ERROR    Got Exception on main handler:
 Traceback (most recent call last):
   File "/content/Deepface-faceswap/lib/cli/launcher.py", line 155, in execute_script
     process.process()
@@ -47,4 +47,4 @@ Traceback (most recent call last):
   File "/content/Deepface-faceswap/plugins/train/model/_base.py", line 19, in <module>
     from keras.utils import get_custom_objects, multi_gpu_model
 ImportError: cannot import name 'multi_gpu_model'
-09/12/2020 22:15:46 MainProcess     MainThread      launcher        execute_script            CRITICAL An unexpected crash has occurred. Crash report written to '/content/Deepface-faceswap/crash_report.2020.09.12.221545064348.log'. You MUST provide this file if seeking assistance. Please verify you are running the latest version of faceswap before reporting
+09/12/2020 22:20:42 MainProcess     MainThread      launcher        execute_script            CRITICAL An unexpected crash has occurred. Crash report written to '/content/Deepface-faceswap/crash_report.2020.09.12.222041875211.log'. You MUST provide this file if seeking assistance. Please verify you are running the latest version of faceswap before reporting
